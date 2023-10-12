@@ -12,7 +12,9 @@ import image8 from './assets/pumpkin-patch-2023-8.jpg';
 const IMAGES = [image1, image2, image3, image4, image5, image6, image7, image8];
 
 const App = () => (
-  <ImageSlider imageUrls={IMAGES} />
+  <div style={{ maxWidth: "500px", width: '100%', aspectRatio: '1', margin: "0 auto" }}>
+    <ImageSlider imageUrls={IMAGES} />
+  </div>
 );
 
 export default App
